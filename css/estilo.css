@@ -66,19 +66,23 @@ body p{
 }
 
 #header-der div:nth-child(1) {
- flex-direction: column;
  justify-content: center;
  align-items: center;
  border:2px solid yellow
 }
 
-#header-der div:nth-child(1) .categ{
- height:30px;
- width:30px;
- border:2px solid yellow
+#header-der div:nth-child(1) nav ul {
+ list-style:none
+ 
+}
+   
+#header-der div:nth-child(1) nav ul li a {
+ display: block;
+ background-color: rgb(105, 208, 107);
+ padding: 20px;
+ text-decoration: none;
 
 }
-
 
 #header-der div:nth-child(2){
  
@@ -89,18 +93,12 @@ body p{
 
 }
 
-#header-der div:nth-child(2) nav ul {
- list-style:none
+#header-der div:nth-child(2) a .login-img{
+ height: 30px;
+ width: 30px;
 
 }
-   
-#header-der div:nth-child(2) nav ul li a {
- display: block;
- background-color: rgb(37, 150, 39);
- padding: 10px;
- text-decoration: none;
-}
- 
+
 #header-der div:nth-child(3){
  flex-direction: column;
  justify-content: center;
@@ -109,15 +107,10 @@ body p{
 
 }
   
-#header-der div:nth-child(3) a .login-img{
+#header-der div:nth-child(3) a .carro{
  height: 30px;
  width: 30px;
-}
-
-#header-der div:nth-child(4) a .carro{
- height: 30px;
- width: 30px;
- border:2px solid yellow
+ 
 }
 
 /* FIN DE HEADER*/
@@ -128,28 +121,36 @@ body p{
  background-color: rgb(75, 37, 227);
 
 }
+
+ .anuncio-header p{ 
+    margin-bottom: 0px;
+
+}
 /*FIN DE ANUNCIO HEADER*/
 
 /*SECCIÓN 1 GALERIA*/
-#main div.cabecera img{
- height:200px;
- width:300px;
- margin-top: 20px;
- margin-bottom: 20px;
 
-}
 /*FIN SECCIÓN 1*/
 
 
 /*SECCIÓN 2 CATEGORIAS*/
 
-div.categoriaslink a img{
-    height:150px;
-    width:250px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+#categoriaslink div{
+ flex-direction: column;
+ flex-grow: 1;
+ align-items: center;
+
+
+}
+
+#categoriaslink div a img{
+ height:170px;
+ width:200px;
+ margin-top:10px;
    
 }
+
+#categoriaslink div a
 
 /*FIN SECCIÓN 2*/
 
@@ -157,118 +158,66 @@ div.categoriaslink a img{
 
 #presentacion .grid{
  grid-template-columns: repeat(2,1fr);
- column-gap: 10px;
- row-gap: 5px;
+ column-gap: 15px;
+ row-gap: 15px;
  justify-items: center;
  align-items: center;
+ grid-auto-rows: 30px 1fr;
 
 }
 
 #presentacion .grid div:nth-child(1){
  grid-column: 1/2;
  grid-row:1/3;
+ justify-self: center;
 
+}
+
+#presentacion .grid div:nth-child(1) img{
+ width: 600px;
+ height: 300px;
 }
 
 #presentacion .grid div:nth-child(2){
  grid-column:1/2;
  grid-row:3/4;
-   
+ 
 }
 
 #presentacion .grid div:nth-child(3){
  grid-column:1/2;
  grid-row:4/5;
+ justify-self:start;
 
 }
 
 #presentacion .grid div:nth-child(4){
  grid-column:2/3;
  grid-row:1/2;
- justify-content: center;
- justify-items: center;
- border: 2px solid red;
+ justify-self: center;
    
 }
    
 #presentacion .grid div:nth-child(5){
  grid-column: 2/3;
  grid-row:2/3;
+ justify-self: center;
 
 }
 
 #presentacion .grid div:nth-child(6){
  grid-column: 2/3;
  grid-row:3/4;
-   
+ justify-self: center;
 }
 
 #presentacion .grid div:nth-child(7){
  grid-column: 2/3;
  grid-row:4/5;
+ justify-self: center;
       
 }
-   
-   
 
-
-
-
-/**
-#presentacion {
- flex-wrap:nowrap;
- justify-content: center;
- 
-}
-
-#presentacion div{
- flex-basis: 50%;
- 
-
-}
-#presentacion :nth-child(1){
- flex-direction: column;
- border:2px solid blue;
-
-}
-
-#presentacion :nth-child(1) img{
- display: block;
- height: 315;
- width: 560;
-
-}
-
-#presentacion :nth-child(2) {
- flex-direction: column;
- border:2px solid green;
-
-}
-
-
-#presentacion img{
- height:400px;
- width: 600px;
-   
-}
-
-#ubicacion {
- flex-wrap:nowrap;
- justify-content: space-evenly;
-}
-
-#ubicacion :nth-child(1) {
- flex-direction: column;
- align-items: center;
-
-}
-
-#ubicacion :nth-child(2) {
-    flex-direction: column;
-    align-items: center;
-   
-}
-**/
 /*FIN SECCIÓN 3 PRESENTACIÓN*/
 
 /*FOOTER*/
@@ -500,3 +449,30 @@ div.descript {
    
    }
 /* FIN DE ACEITES.HTML*/
+
+/*RESPONSIVE*/
+/*tablet*/
+@media (max-width:1199px){
+ #categoriaslink div{
+ flex-basis:50%;
+
+ }
+
+ #foot div{
+    flex-basis: 100%;
+
+ }
+
+ #presentacion .grid{
+ grid-template-columns:1fr;
+
+ grid-column: initial !important;
+ grid-row: initial !important;
+
+}
+}
+/*celular*/
+@media (max-width:768px){
+ 
+
+}
