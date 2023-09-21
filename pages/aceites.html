@@ -4,6 +4,7 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="shortcut icon" href="../imagenes/favicon.png">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
             <link rel="stylesheet" href="../css/estilo.css">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,37 +12,47 @@
             <title>VELAS&SPA</title>
         </head>
       <body>
-             <!--ENCABEZADO-->
-         <div id="head">
-                <header class="cabecera">
-                    <!--LOGOTIPO-->
-                    <img class="hlogo" src="../imagenes/logo5.png" alt="logotipo">
-                    <!--FIN DE LOGOTIPO-->
-
-                    <!--LOGIN-->
-                  <div class="login">
-                        <a href="./inicio-sesion.html"><img src="../imagenes/login.png" alt="login"></a>
-                 </div>
-                    <!--FIN LOGIN-->
-                    <!--TITULO-->
-                    <h1>VELAS&SPA</h1>
-
-                    <!--NAVEGADOR-->
-                    <nav>
+  
+      <header>
+                <!-- bg-light es el fondo del menu -->
+          <nav class="navbar navbar-expand-lg navbar-light fondonav">
+          <div class="container">
+              <a class="navbar-brand" href="#">VELAS&SPA</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                      
+                      <li class="nav-item">
+                          <a class="nav-link" href="../index.html">INICIO</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href=" velas.html">VELAS</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./aceites.html">ACEITES</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./fragancias.html">FRAGANCIAS</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./equipos.html">EQUIPOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./inicio-sesion.html">SESION</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./carrito.html">CARRITO</a>
+                    </li>
                     
-                     <ul>
-                         <li><a href="../index.html">INICIO</a></li>
-                         <li><a href=" velas.html">VELAS</a></li>
-                         <li><a href="./aceites.html">ACEITES</a></li>
-                         <li><a href="./fragancias.html">FRAGANCIAS</a></li>
-                         <li><a href="./equipos.html">EQUIPOS</a></li>
-                         <li><a href="./contacto.html">CONTACTO</a></li>
-                      </ul>
-                    </nav>
-
-                    <!--FIN DE NAVEGADOR-->
-                </header>
+                  </ul>
+              </div>
           </div>
+          </nav>
+</header>
+  <!--FIN HEADER-->
 	         <!--FIN ENCABEZADO-->
 
 	         <!--SECCIÓN 1 ACEITES-->
@@ -77,29 +88,28 @@
                       </div>
             </section>
              <!--FIN DE SECCIÓN 1 VELAS-->
-	      
-
-              <!--FOOTER-->
-            <footer class="foot">
-                <nav class="nav1">
-                    <ul>
-                        <li><a href="./pages/terminos-y-codiciones.html">Terminos y Condiciones</a></li>
-                        <li><a href="./pages/politica-de-cambios-y-devoluciones.html">Politica de Cambios y devoluciones</a></li>
-                        <li><a href="./pages/politica-de-despacho.html">Politica de Despacho</a></li>
-                    </ul>
-                </nav>
-                <nav class="nav2">
-                    <ul>
-                        <li class="contacto"><a href="contacto.html">CONTACTO</a></li>
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Inicio</a></li>
-                    </ul>
-                </nav>
-                <!--LOGOTIPO-->
-                <img src="../imagenes/logo4.4.png" alt="logotipo">
-                <!--FIN DE LOGOTIPO-->
-                <!--FIN DE FOOTER-->
-            </footer>
-     </body>
-  </html>
+	    
+               <!--FOOTER-->
+          <footer class="py-4">
+            <div class="container">
+                <div class="row">
+                  <ul class="col-md-6">
+                    <li><a href="./pages/terminos-y-codiciones.html">Terminos y Condiciones</a></li>
+                    <li><a href="./pages/politica-de-cambios-y-devoluciones.html">Politica de Cambios y devoluciones</a></li>
+                    <li><a href="./pages/politica-de-despacho.html">Politica de Despacho</a></li>
+                  </ul>
+    
+                  <ul class="col-md-2 ms-auto">
+                    <li><a href="./pages/contacto.html">CONTACTO</a></li>
+                    <li class="facebook"><a href="https://es-la.facebook.com/login"><img src="../imagenes/facebook.png" alt="facebook"></a></li>
+                    <li class="instagram"><a href="https://www.instagram.com/?hl=es"><img src="../imagenes/instagram.png"></a></li>
+                    <li><a href="">INICIO</a></li>
+                  </ul>
+                </div>
+    
+            </div>
+          </footer>
+   <!--FIN DE FOOTER-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

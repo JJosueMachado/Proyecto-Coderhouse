@@ -13,44 +13,45 @@
   </head>
 
  <body>
-   <div class="contenedor">     
+   
         <!--HEADER-->
-     <header class="flex">
-         <div id="header-izq" class="flex ">
-              <!--LOGO-->
-              <img class="hlogo" src="https://picsum.photos/100" alt="logo">
-              <!--FIN DE LOGO-->
-              <!--TITULO-->
-              <h1>VELAS&SPA</h1>
-         </div>
-
-         <div id="header-der" class="flex">
-            <!--NAVEGADOR Y BUSCADOR-->
-           <div class="flex">
-             <nav>
-               <ul class="flex">
-                  <li><a href="index.html">INICIO</a></li>
-                  <li><a href="./pages/velas.html">VELAS</a></li>
-                  <li><a href="./pages/aceites.html">ACEITES</a></li>
-                  <li><a href="./pages/fragancias.html">FRAGANCIAS</a></li>
-                  <li><a href="./pages/equipos.html">EQUIPOS</a></li>
-                  <li><a href="./pages/contacto.html">CONTACTO</a></li>
-               </ul>
-              </nav>
-           </div>
-            <!--FIN DE NAVEGADOR Y BUSCADOR-->
-            <!--LOGIN-->
-              <div id="login" class="flex">
-                  <a href="./pages/inicio-sesion.html"><img class="login-img" src="./imagenes/user.png" alt="login"></a>
-                  <p>INICIO SESIÓN</p>
+      <header>
+                <!-- bg-light es el fondo del menu -->
+        <nav class="navbar navbar-expand-lg navbar-light fondonav">
+          <div class="container">
+              <a class="navbar-brand" href="#">VELAS&SPA</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="index.html">INICIO</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./pages/velas.html">VELAS</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./pages/aceites.html">ACEITES</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./pages/fragancias.html">FRAGANCIAS</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./pages/equipos.html">EQUIPOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/inicio-sesion.html">SESION</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/carrito.html">CARRITO</a>
+                  </li>
+                
+                  </ul>
               </div>
-                  <!--FIN LOGIN-->
-                  <!--CARRITO-->
-                  <div class="flex">
-                    <a href="./pages/carrito.html"><img class="carro" src="./imagenes/shopping-cart.png" alt="Carrito"></a>
-                  </div>
-                  <!--FIN DE CARRITO-->
-              </div>
+          </div>
+      </nav>
        </header>
 	        <!--FIN HEADER-->
           <!--ANUNCIO HEADER-->            
@@ -61,6 +62,7 @@
  
 	         <!--SECCIÓN 1 GALERIA/CARRUSEL-->
 			     <!--CARRUSEL GALERIA CON ENLACE USANDO bootstrap-->
+           <section id="carrusel>
 			 <div id="carouselExampleCaptions" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -72,7 +74,7 @@
                   <div class="carousel-item active">
                     <img src="./imagenes/3.jpg" class="d-block w-100" alt="velas">
                     <div class="carousel-caption d-none d-md-block">
-                      <a href="./pages/velas.html">VER MAS</a>
+                      <a  href="./pages/velas.html">VER MAS</a>
                       <p>Velas con aromas y formas que transforman.</p>
                     </div>
                   </div>
@@ -107,100 +109,110 @@
                   <span class="visually-hidden">Siguiente</span>
                 </button>
               </div>
-			  
+            </section>
+			  <hr>
 			  <!--FIN DE CARRUSEL GALERIA CON ENLACE USANDO bootstrap-->
 			  <!--FIN SECCIÓN 1 GALERIA/CARRUSEL-->
              <!--SECCIÓN 2 CATEGORIAS-->
-	         <section>
-            <h1>Categorias</h1>
-	              <div id="categoriaslink" class="flex">
-                     <div class="flex">
-                       <a href="pages/velas.html"><img src="./imagenes/3.jpg" alt="velas"></a>
-                       <a href="pages/velas.html">VELAS</a>
-                     </div>
-                     <div class="flex">
-                      <a href="./pages/aceites.html"><img src="./imagenes/10.jpg" alt="aceites"></a>
-                      <a href="./pages/aceites.html">ACEITES</a>
-                     </div>
-                     <div class="flex">
-                      <a href="./pages/equipos.html"><img src="./imagenes/5.jpg" alt="equipos"></a>
-                      <a href="./pages/equipos.html">EQUIPOS</a>
-                     </div>
-                     <div class="flex">
-                       <a href="./pages/fragancias.html"><img src="./imagenes/8.jpg" alt="frangancias"></a>
-                       <a href="./pages/fragancias.html">FRAGANCIAS</a>
-                     </div>
-                     <div class="flex">
-                      <a href="./pages/Promociones.html"><img src="./imagenes/25.jpg" alt="combos de relajación"></a>
-                      <a href="./pages/Promociones.html">COMBOS DE RELAJACION</a>
-                     </div>
-		             </div>
-                 <br>
-              
-	         </section>
+
+             <h1 class="title">VELAS&SPA</h1>
+
+             <main class="container">
+              <h2 class="categ">Categorias:</h2>
+             <section class="row">
+              <div class="col-md-4">
+                  <div class="card">
+                    <a href="pages/velas.html"><img src="./imagenes/1.jpg" class="card-img-top" alt="velas"></a>
+                      <div class="card-body">
+                          <a class="card-text" href="pages/velas.html">VELAS</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <a href="./pages/aceites.html"><img src="./imagenes/9.jpg" class="card-img-top" alt="velas"></a>
+                    <div class="card-body">
+                        <a class="card-text" href="./pages/aceites.html">ACEITES</a>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <a href="./pages/equipos.html"><img src="./imagenes/27.jpg" class="card-img-top" alt="velas"></a>
+                    <div class="card-body">
+                        <a class="card-text" href="./pages/equipos.html">EQUIPOS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <a href="./pages/fragancias.html"><img src="./imagenes/8.jpg" class="card-img-top" alt="velas"></a>
+                  <div class="card-body">
+                      <a class="card-text" href="./pages/fragancias.html">FRAGANCIAS</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <a href="./pages/Promociones.html"><img src="./imagenes/25.jpg" class="card-img-top" alt="velas"></a>
+                <div class="card-body">
+                    <a class="card-text" href="./pages/Promociones.html">COMBOS DE RELAJACION</a>
+                </div>
+            </div>
+        </div>
+          </section>
+        
               <!--FIN SECCIÓN 2 CATEGORIAS-->
-
+<hr>
               <!--SECCIÓN 3 PRESENTACION DE LA EMPRESA-->
-             <section id="presentacion"> 
-                    <div class="grid">
-                        <div>
-                            <img src="./imagenes/28.jpg" alt="dueños de la empresa">
-                        </div>
-                    
-                        <div>
-                            <h3>La importancia de relajarse...</h3>
-                        </div>
 
-                        <div>
-                         <iframe width="560" height="300" src="https://www.youtube.com/embed/dPbnXNHPfrQ?si=6IdySaXShb0_WNZt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
+              <section class="row mt-3" id="hero"><!-- fila -->
+                <div class="col-md-6">
+                    <h2>¿Quines somos?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus possimus reprehenderit ullam? Quaerat
+                        sit nesciunt a eligendi animi explicabo, maiores odio facere illo!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, blanditiis.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="./imagenes/28.jpg" class="img-fluid" alt="Dueños de la empresa">
+                </div>
+            </section>
 
-                        <div>
-                         <h2>¿Quiénes somos?</h2>
-                        </div>
+            <section class="row mt-3" id="hero">
+              <div class="col-md-6">
+                  <h2>La importancia de relajarse...</h2>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, facere quis harum maxime doloribus cumque, temporibus cupiditate tenetur porro animi incidunt libero ipsa perspiciatis facilis sint fugit odit error quam eveniet quasi magni commodi dicta mollitia deleniti! Natus laboriosam quibusdam ea! Id vitae harum temporibus cumque animi consequatur deleniti porro!</p>
+             </div>
+              <div class="col-md-6">
+                <div>
+                  <iframe width="560" height="300" src="https://www.youtube.com/embed/dPbnXNHPfrQ?si=6IdySaXShb0_WNZt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div>
+          </section> 
 
-                        <div>
-                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis delectus minus quidem laudantium incidunt veniam quibusdam, eius, at nobis aut magnam, nostrum est itaque rerum necessitatibus alias officiis! Accusamus ut provident temporibus neque minus repellendus expedita, omnis ipsa? Libero distinctio voluptas nesciunt iusto iure ipsum aspernatur quod, quos atque adipisci aliquid eveniet ab laboriosam soluta doloremque labore numquam sed quibusdam reiciendis quasi, repudiandae impedit. Reprehenderit unde ducimus exercitationem culpa reiciendis, minima nisi nobis laborum possimus ipsum soluta sequi quod autem molestias fugiat porro nesciunt quaerat explicabo? Explicabo porro corporis, eos, voluptate quis sit, quae qui maiores rem commodi dolorum provident.</p>
-                        </div>
-
-                        <div>
-                         <h2>¿Dónde nos ubicamos?</h2>
-                        </div>
-                        
-                        <div>
-                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.8954230366!2d-70.65612472556998!3d-33.45203099759092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c50ece08b569%3A0x2fb0a2e7986d894c!2sParque%20Almagro!5e0!3m2!1ses-419!2scl!4v1693186467676!5m2!1ses-419!2scl" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                 </div>
-             </section>
-
+            </main>
               <!--FOOTER-->
-              <footer>
-                 <div id="foot" class="flex">
-                     <div class="flex">
-                         <ul>
-                                <li><a href="./pages/terminos-y-codiciones.html">Terminos y Condiciones</a></li>
-                                <li><a href="./pages/politica-de-cambios-y-devoluciones.html">Politica de Cambios y devoluciones</a></li>
-                                <li><a href="./pages/politica-de-despacho.html">Politica de Despacho</a></li>
-                         </ul>
-                     </div>
-                    
-                     <div class="flex">
-                         <ul>
-                                <li><a href="./pages/contacto.html">CONTACTO</a></li>
-                                <li class="facebook"><a href="https://es-la.facebook.com/login"><img src="./imagenes/facebook.png" alt="facebook"></a></li>
-                                <li class="instagram"><a href="https://www.instagram.com/?hl=es"><img src="./imagenes/instagram.png"></a></li>
-                                <li><a href="">INICIO</a></li>
-                         </ul>
-                     </div>
-                     <!--LOGOTIPO-->
-                     <div class="flex">
-                          <img src="./imagenes/logo4.4.png" alt="logotipo">
-                     </div>
-                     <!--FIN DE LOGOTIPO-->
-                 </div>
-                </footer>
-                <!--FIN DE FOOTER-->
-         </div>
+          <footer class="py-4">
+        <div class="container">
+            <div class="row">
+              <ul class="col-md-6">
+                <li><a href="./pages/terminos-y-codiciones.html">Terminos y Condiciones</a></li>
+                <li><a href="./pages/politica-de-cambios-y-devoluciones.html">Politica de Cambios y devoluciones</a></li>
+                <li><a href="./pages/politica-de-despacho.html">Politica de Despacho</a></li>
+              </ul>
+
+              <ul class="col-md-2 ms-auto">
+                <li><a href="./pages/contacto.html">CONTACTO</a></li>
+                <li class="facebook"><a href="https://es-la.facebook.com/login"><img src="./imagenes/facebook.png" alt="facebook"></a></li>
+                <li class="instagram"><a href="https://www.instagram.com/?hl=es"><img src="./imagenes/instagram.png"></a></li>
+                <li><a href="">INICIO</a></li>
+              </ul>
+            </div>
+
+        </div>
+      </footer>
+          <!--FIN DE FOOTER-->
+      
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
      </body>
 </html>
