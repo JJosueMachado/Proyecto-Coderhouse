@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/**VARIABLES**/
+
+$amarillo: #ecc442;
+$azul: #152a38;
+
+/**FIN DE VARIABLES**/
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  background-color: #fffbe7;
+
+  overflow-x: hidden;
+}
+body h1 {
+  font-family: "PT Serif", serif;
+  color: $azul;
+}
+
+body h2 {
+  font-family: "Comfortaa", cursive;
+}
+
+.categoria {
+  font-size: 1.4rem;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+body p {
+  font-family: "Lora", serif;
+}
+
+/*INDEX.HTML/
+/*HEADER*/
+.navbar-brand img {
+  width: 130px;
+  height: 150px;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+  padding-right: 150px;
+}
+
+.fondonav {
+  background-color: $amarillo;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $azul;
+  font-size: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  border-bottom: 3px solid $azul;
+  color: blanchedalmond;
+  border-radius: 7px;
+}
+
+.bi-cart4 {
+  font-size: 25px;
+  color: $azul;
+}
+
+.bi-person-circle {
+  font-size: 25px;
+  color: $azul;
+}
+/*ANUNCIO HEADER*/
+
+.anuncio-header {
+  color: rgb(216, 215, 215);
+  text-align: center;
+  background-color: $azul;
+}
+
+.anuncio-header p {
+  margin-bottom: 0px;
+}
+/*FIN DE ANUNCIO HEADER*/
+/* FIN DE HEADER*/
+
+/*SECCIÓN 1 CARRUSEL*/
+
+.carousel-caption {
+  font-size: 22px;
+}
+
+.carousel-caption a {
+  &:link {
+    color: #152a38;
+    text-decoration: none;
+    padding: 1px 20px 1px 20px;
+    border-left: 2px solid #152a38;
+    border-right: 2px solid #152a38;
+  }
+
+  &:visited {
+    color: $azul;
+    text-decoration: none;
+    border: 2px solid $azul;
+    border: 2px solid $azul;
+    padding: 1px 20px 1px 20px;
+  }
+
+  &:hover {
+    color: $amarillo;
+    text-decoration: none;
+    padding: 1px 20px 1px 20px;
+    border-radius: 2px;
+    border: 2px solid $amarillo;
+    border-radius: 5px;
+  }
+
+  &:active {
+    color: #152a38;
+    text-decoration: none;
+    border: 2px solid $azul;
+    border-radius: 5px;
+    padding: 1px 20px 1px 20px;
+  }
+}
+/*FIN SECCIÓN 1 CARRUSEL*/
+
+/*SECCIÓN 2 CATEGORIAS*/
+
+.title {
+  text-align: center;
+  font-family: "PT Serif", serif;
+  color: $azul;
+}
+
+.categ {
+  text-align: left;
+}
+
+.row {
+  --bs-gutter-y: 1.5rem;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body a {
+  &:link {
+    color: #152a38;
+    text-decoration: none;
+    padding: 1px 20px 1px 20px;
+    border-left: 1.5px solid $azul;
+    border-right: 1.5px solid $azul;
+  }
+
+  &:visited {
+    color: #152a38;
+    text-decoration: none;
+    border: 1.5px solid $azul;
+    border: 1.5px solid $azul;
+    padding: 1px 20px 1px 20px;
+  }
+
+  &:hover {
+    color: $amarillo;
+    text-decoration: none;
+    padding: 1px 20px 1px 20px;
+    border-radius: 2px;
+    border: 2px solid $amarillo;
+    border-radius: 5px;
+  }
+
+  &:active {
+    color: #152a38;
+    text-decoration: none;
+    border: 2px solid $azul;
+    border-radius: 3px;
+    padding: 1px 20px 1px 20px;
+  }
+}
+
+/*FIN SECCIÓN 2*/
+
+/*SECCIÓN 3 PRESENTACIÓN*/
+/* FIN DE SECCIÓN 3 PRESENTACIÓN*/
+
+/*FOOTER*/
+
+footer {
+  background-color: $amarillo;
+}
+.col-md-6 {
+  list-style: none;
+  flex-grow: 1;
+
+  a {
+    text-decoration: none;
+    padding-bottom: 15px;
+    display: inline-block;
+
+    &:link {
+      color: $azul;
+    }
+
+    &:hover {
+      color: whitesmoke;
+    }
+  }
+}
+.col-md-2 {
+  list-style: none;
+
+  a {
+    text-decoration: none;
+    padding-bottom: 5px;
+    display: inline-block;
+
+    &:link {
+      color: $azul;
+    }
+
+    &:visited {
+      color: $azul;
+    }
+
+    &:hover {
+      color: whitesmoke;
+    }
+  }
+}
+
+.redes {
+  &:hover {
+    color: whitesmoke;
+  }
+}
+.bi-facebook {
+  font-size: 25px;
+  color: $azul;
+}
+
+.bi-instagram {
+  font-size: 25px;
+  color: $azul;
+}
+
+/*FIN FOOTER*/
+
+/*FIN DE INDEX.HTML*/
+
+/*CONTACTO.HTML*/
+
+.col-md-8 h1 {
+  text-align: center;
+}
+
+.form-control {
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba(254, 248, 81, 0.68);
+  }
+}
+
+.btn-primary {
+  color: whitesmoke;
+  font-size: 20px;
+  background-color: $amarillo;
+  border-color: $amarillo;
+
+  &:hover {
+    color: whitesmoke;
+    background-color: #e8b200;
+    border-color: #e8b200;
+  }
+
+  &:active {
+    color: whitesmoke;
+    background-color: $azul;
+    border-color: $azul;
+  }
+
+  &:focus {
+    color: whitesmoke;
+    background-color: #e8b200;
+    border-color: #e8b200;
+    box-shadow: 0 0 0 0.25rem rgba(254, 248, 81, 0.68);
+  }
+}
+
+.form-check-input:checked {
+  background-color: $amarillo;
+  border-color: #ecc442;
+}
+
+.form-check-input:focus {
+  border-color: $amarillo;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(234, 205, 44, 0.25);
+}
+
+.col-md-4 {
+  ul {
+    list-style: none;
+    li {
+      h2 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.bi-telephone-fill {
+  font-size: 20px;
+  color: $azul;
+}
+
+/*FIN DE CONTACTO.HTML*/
+
+/*INICIO-SESION.HTML*/
+#iniciarsesiontitle {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 15px;
+}
+.iniciarsesion {
+  margin-left: 120px;
+}
+
+.col-md-4 {
+  ul {
+    li {
+      text-align: center;
+      list-style: none;
+      a {
+        color: $azul;
+        text-decoration: none;
+        &:link {
+          color: $azul;
+        }
+        &:hover {
+          color: $amarillo;
+        }
+        &:focus {
+          color: $azul;
+        }
+      }
+    }
+  }
+}
+
+/* FIN DE INICIO-SESION.HTML*/
+/*CREAR-CUENTA.HTML*/
+#registrotitle {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 15px;
+}
+.registrarse {
+  margin-left: 120px;
+  margin-bottom: 30px;
+}
+/*FIN DE CREAR-CUENTA.HTML*/
+
+/*VELAS.HTML*/
+#velas {
+  display: inline-block;
+}
+
+#velas h1 {
+  text-align: center;
+  padding: 50px;
+}
+
+#velas.descript-velas a img {
+  width: 400px;
+  height: 300px;
+}
+
+div.descript-velas {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 400px;
+}
+
+div.descript-velas {
+  border: 1px solid #777;
+}
+
+div.descript-velas img {
+  width: 100%;
+  height: auto;
+}
+
+div.descript {
+  padding: 15px;
+  text-align: center;
+}
+
+/* FIN DE VELAS.HTML*/
+
+/* ACEITES.HTML*/
+
+#aceites {
+  display: inline-block;
+}
+
+#aceites h1 {
+  text-align: center;
+  padding: 50px;
+}
+
+#aceites.descript-aceites a img {
+  width: 400px;
+  height: 300px;
+}
+
+div.descript-aceites {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 400px;
+}
+
+div.descript-aceites {
+  border: 1px solid #777;
+}
+
+div.descript-aceites img {
+  width: 100%;
+  height: auto;
+}
+
+div.descript {
+  padding: 15px;
+  text-align: center;
+}
+/* FIN DE ACEITES.HTML*/
